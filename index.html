@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science on Tap</title>
+    <link rel="preload" href="images/wood-board-background.jpg" as="image">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-section">
+            <a href="index.html" class="logo">
+                <img src="images/sot-logo.png" alt="Science on Tap" class="logo-image">
+                <div class="logo-text-container">
+                    <span class="logo-text">SCIENCE ON TAP</span>
+                    <span class="logo-subtitle">FORT COLLINS, CO</span>
+                </div>
+            </a>
+        </div>
+        <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <div class="bulletin-board" id="bulletin-board">
+        <a href="images/fliers/Photoredox_poster.jpg" class="flier">
+            <img src="images/fliers/Photoredox_poster.jpg" alt="Photoredox Poster">
+            <div class="pushpin"></div>
+        </a>
+        <a href="images/fliers/curelabs_poster.jpg" class="flier past-event">
+            <img src="images/fliers/curelabs_poster.jpg" alt="CURE Labs Poster">
+            <div class="pushpin"></div>
+        </a>
+        <a href="images/fliers/anniversary_poster.jpg" class="flier past-event">
+            <img src="images/fliers/anniversary_poster.jpg" alt="Anniversary Poster">
+            <div class="pushpin"></div>
+        </a>
+        <a href="images/fliers/ctsi_slam_poster.jpg" class="flier past-event">
+            <img src="images/fliers/ctsi_slam_poster.jpg" alt="CTSI Slam Poster">
+            <div class="pushpin"></div>
+        </a>
+        <a href="images/fliers/science_slam_vet_poster.jpg" class="flier past-event">
+            <img src="images/fliers/science_slam_vet_poster.jpg" alt="Science Slam Vet Poster">
+            <div class="pushpin"></div>
+        </a>
+        <a href="images/fliers/ants_poster.jpg" class="flier past-event">
+            <img src="images/fliers/ants_poster.jpg" alt="Ants Poster">
+            <div class="pushpin"></div>
+        </a>
+    </div>
+
+    <main class="container">
+        <div class="calendar-section">
+            <div class="next-event-countdown">
+                <h2><i class="far fa-clock"></i> Event Countdown</h2>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="countdown-days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="countdown-hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="countdown-minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="countdown-seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <h2><i class="far fa-calendar-alt"></i> Event Calendar</h2>
+            <div class="calendar" id="calendar">
+            </div>
+        </div>
+        
+        <div class="events-section">
+            <h2><i class="fas fa-forward"></i> Upcoming Events</h2>
+            <div class="events-list" id="upcoming-events">
+                <div class="event">
+                    <div class="event-date">January 28, 2025</div>
+                    <h3>Sustainable Photoredox Catalysis: Harnessing Visible Light Energy for Chemical Synthesis</h3>
+                    <p>We will be introducing CSU's Center for Sustainable Photoredox Catalysis (SuPRCat). The mission of SuPRCat is to transform chemical synthesis by designing powerful, industrially-relevant processes using sustainable photoredox catalysts based on organic or earth abundant compounds and the energy from visible light. We will introduce how we are designing new compounds and strategies to reach these goals.</p>
+                    <div class="event-details">
+                        <span><i class="far fa-clock"></i> 6:30 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Wolverine Publik House</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-history"></i> Latest Event</h2>
+            <div class="events-list" id="past-events">
+                <div class="event past">
+                    <div class="event-date">December 5, 2024</div>
+                    <h3>CURE Labs</h3>
+                    <p>Our first Science on Tap event to kick off our 11th year at Prost!</p>
+                    <div class="event-details">
+                        <span><i class="far fa-clock"></i> 6:30 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Prost Biergarten</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="facebook-feed-section">
+            <h2><i class="fas fa-rss"></i> Latest Updates</h2>
+            <div class="facebook-feed">
+                <div class="fb-page" 
+                    data-href="https://www.facebook.com/SoTFoCo" 
+                    data-tabs="timeline" 
+                    data-width="500" 
+                    data-height="800" 
+                    data-small-header="false" 
+                    data-adapt-container-width="true" 
+                    data-hide-cover="false" 
+                    data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/SoTFoCo" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/SoTFoCo">Science on Tap Fort Collins</a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/SoTFoCo" target="_blank">
+                <i class="fab fa-facebook"></i>
+                Follow us on Facebook
+            </a>
+            <a href="https://sotfoco.blogspot.com" target="_blank">
+                <i class="fas fa-history"></i>
+                Visit Legacy Website
+            </a>
+        </div>
+        <div class="footer-logos">
+            <img src="images/sot-logo.png" alt="Science on Tap" class="footer-logo sot-logo">
+            <a href="https://www.wolverinefarm.org" target="_blank">
+                <img src="images/wolverine-farm-logo.png" alt="Wolverine Farm" class="footer-logo">
+            </a>
+        </div>
+        <div class="footer-credit">
+            <a href="https://github.com/grigsbyanthony/science-on-tap" target="_blank" class="footer-link">
+                <i class="fab fa-github"></i>
+                View on GitHub
+            </a>
+            <span class="footer-separator">•</span>
+            <span>by <a href="https://grigsby.info" target="_blank" class="footer-link">Anthony Grigsby</a></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="scripts/lightbox.js"></script>
+    <script src="scripts/bulletin-board.js"></script>
+    <script src="scripts/snow.js"></script>
+</body>
+</html>
