@@ -485,6 +485,25 @@ body {
     }
 }
 
+/* Additional responsive breakpoints for logo text */
+@media (max-width: 600px) {
+    .logo-text {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo-text {
+        font-size: 1.25rem;
+    }
+}
+
 .nav-links a:hover {
     color: var(--accent);
 }
