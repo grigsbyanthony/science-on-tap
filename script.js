@@ -2,21 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu functionality
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
-    const snowToggle = document.querySelector('.snow-toggle');
 
     if (mobileMenuToggle && navLinks) {
         mobileMenuToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
             mobileMenuToggle.classList.toggle('active');
-            
-            // Move snow toggle into mobile menu when it's open
-            if (snowToggle) {
-                if (navLinks.classList.contains('active')) {
-                    navLinks.appendChild(snowToggle);
-                } else {
-                    document.querySelector('.navbar').appendChild(snowToggle);
-                }
-            }
         });
     }
 
@@ -38,8 +28,8 @@ function initializeCountdown() {
 }
 
 function getNextEventDate() {
-    // Next event is January 28, 2025 at 6:30 PM
-    const nextEvent = new Date(2025, 0, 28, 18, 30, 0, 0);
+    // Next event is February 25, 2025 at 6:30 PM
+    const nextEvent = new Date(2025, 1, 25, 18, 30, 0, 0);
     const now = new Date();
     
     // If the event has passed, return null or handle accordingly
@@ -74,7 +64,7 @@ function initializeCalendar() {
     const currentYear = date.getFullYear();
     
     // Create array with the actual event date
-    const eventDates = [new Date(2025, 0, 28)]; // January 28, 2025
+    const eventDates = [new Date(2025, 1, 25)]; // February 25, 2025
     
     renderCalendar(currentMonth, currentYear, eventDates);
 }
@@ -187,3 +177,5 @@ function renderCalendar(month, year, eventDates) {
     
     calendarElement.innerHTML = styles + calendarHTML;
 }
+
+const eventDate = new Date('February 25, 2025 18:30:00').getTime();
